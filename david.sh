@@ -18,4 +18,5 @@ $ iptables -P OUTPUT ACCEPT
 $ iptables -P FORWARD ACCEPT
 $ iptables -F
 
-git push https://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@github.com/zhudy/mdserve
+//https://techglimpse.com/git-push-github-token-based-passwordless/
+git push https://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@github.com/zhudy/mdserve //怎么还要问密码了，奇怪
