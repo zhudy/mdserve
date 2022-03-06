@@ -1,6 +1,6 @@
 FROM python:3.8-slim
 RUN sed -i "s@http://deb.debian.org@https://mirrors.163.com@g" /etc/apt/sources.list
-RUN apt-get update && apt-get install git -y
+RUN apt-get update && apt-get install git gcc -y
 
 # COPY ./startup.sh /usr/bin/startup.sh
 # RUN chmod +x /usr/bin/startup.sh
