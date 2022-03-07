@@ -20,3 +20,12 @@ $ iptables -F
 
 //https://techglimpse.com/git-push-github-token-based-passwordless/
 git push https://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@github.com/zhudy/mdserve //怎么还要问密码了，奇怪
+
+//参考https://blog.csdn.net/zjxht62/article/details/119201842
+$ git config --global credential.helper store
+再次执行git push，会提示输入用户名和密码，这里密码就输入刚才生成的access token即可
+$ git push
+用户名输入 zhudy@yahoo.com
+口令输入 token
+可以看到多了个文件$HOME/.git-credentials
+内容为：https://zhudy%40yahoo.com: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@github.com
